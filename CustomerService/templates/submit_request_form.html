@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Service Request</title>
+</head>
+<body>
+    <h1>Submit Service Request</h1>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Add form fields here -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

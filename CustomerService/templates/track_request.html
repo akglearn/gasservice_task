@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Service Request</title>
+</head>
+<body>
+    <h1>Track Service Request</h1>
+    {% if service_request %}
+    <p>Request ID: {{ service_request.id }}</p>
+    <p>Status: {{ service_request.get_status_display }}</p>
+    <p>Type: {{ service_request.get_type_display }}</p>
+    <p>Details: {{ service_request.details }}</p>
+    <!-- Add more fields here as needed -->
+    {% else %}
+    <p>Service request not found.</p>
+    {% endif %}
+</body>
+</html>
